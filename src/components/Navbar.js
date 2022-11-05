@@ -6,7 +6,7 @@ const Navbar = () => { //eslint-disable-line
       <h1 className="logo">Bookstore CMS</h1>
       <ul className="navItems">
         <li className="navItem"><Link to="/">Book</Link></li>
-        <li className="navItem"><Link to="/calculate">Categories</Link></li>
+        <li className="navItem"><Link to="/categories">Categories</Link></li>
       </ul>
     </div>
   );

@@ -10,7 +10,7 @@ const App = () => {  //eslint-disable-line
     <div className="app">
       <Nav />
       <Routes>
-        <Route path="/Book" element={<Book />} />
+        <Route path="/" element={<Book />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
     </div>
