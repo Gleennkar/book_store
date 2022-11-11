@@ -3,9 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import AddBook from './addBook';
 import { removeBook } from '../redux/books/books';
 
-/* eslint-disable react/prop-types */
-/* eslint-disable  react/destructuring-assignment */
-
 function Books() {
   const library = useSelector((state) => state.book);
   const dispatch = useDispatch();
