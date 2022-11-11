@@ -10,6 +10,7 @@
 > Also the use of Hooks (useState) in functions to give my calculate functionality
 > I added two more components to my calculate, that is the Home page, Quote page with each having a navbar, i was able to do this with the use of routers
 > I added the action and reducers in the redux directory
+> I added redux to react making use of useSelector and useDispatch
 
 
 ## Built With
