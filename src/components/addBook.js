@@ -9,7 +9,6 @@ function AddBook() {
   const [inputText, setInputText] = useState({
     title: '',
     author: '',
-    id: '',
   });
 
   const handleChange = (e) => {
@@ -21,7 +20,7 @@ function AddBook() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newBook = { ...inputText, id: uuidv4() };
+    const newBook = { ...inputText, item_id: uuidv4(), category: 'Fiction' };
     dispatch(addBooks(newBook));
     inputText.title = '';
     inputText.author = '';

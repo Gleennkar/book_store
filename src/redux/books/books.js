@@ -1,30 +1,13 @@
-// import { isHtmlElement } from "react-router-dom/dist/dom";
+/* eslint no-param-reassign: "error" */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import types from '../types/types';
 
-const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/AeyELqRTznXa1ZPd7jWT/books';
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/leWAbFKLswud3ymuFM6C/books';
 
 const initialState = {
   isLoading: true,
-  Booklist: {},
-  //   Booklist: [
-  //     {
-  //       id: 1,
-  //       title: 'My Tech Journey',
-  //       author: 'Gleeny',
-  //     },
-  //     {
-  //       id: 2,
-  //       title: 'What You Say',
-  //       author: 'Oprah',
-  //     },
-  //     {
-  //       id: 3,
-  //       title: 'Unlock It',
-  //       author: 'Dan Lok',
-  //     },
-  //   ],
+  Booklist: [],
 
 };
 
@@ -33,6 +16,7 @@ export const getBooks = createAsyncThunk(
   async (thunkAPI) => {
     try {
       const response = await axios.get(url);
+      console.log(response.data);
       return response.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.response.data);
@@ -52,7 +36,7 @@ export const addBooks = createAsyncThunk(
 export const removeBook = createAsyncThunk(
   types.REMOVE_BOOK,
   async (payload, thunkAPI) => {
-    await axios.delete(`${url}/${payload}`);
+    await axios.delete(`${url}/${payload}`, { item_id: payload });
     return thunkAPI.dispatch(getBooks());
   },
 );
@@ -61,11 +45,12 @@ const bookSlice = createSlice({
   name: 'book',
   initialState,
   reducers: {
-    addBook: (state, action) => ({ ...state, bookList: [...state.Booklist, action.bookDetail] }),
+    addBook: (state, action) => ({ ...state, Booklist: [...state.Booklist, action.bookDetail] }),
     removeBook: (state, action) => ({
       ...state,
       Booklist: [
-        ...state.Booklist.filter((book) => book.id !== action.index.id),
+        ...state.Booklist.filter((book) => book.id !== action.id),
+
       ],
     }),
   },
@@ -76,42 +61,12 @@ const bookSlice = createSlice({
     },
     [getBooks.fulfilled]: (state, action) => {
       state.isLoading = false;
-      state.bookList = action.payload;
+      state.Booklist = action.payload;
     },
     [getBooks.rejected]: (state) => {
       state.isLoading = true;
     },
   },
 });
-
-// export const addBooks = (book) => ({
-//   type: types.ADD_BOOK,
-//   payload: book,
-// });
-
-// export const removeBook = (payload) => ({
-//   type: types.REMOVE_BOOK,
-//   payload,
-// });
-
-// // reducer
-
-// const booksReducer = (state = initialState, action) => {
-//   switch (action.type) {
-//     case types.ADD_BOOK:
-//       return { ...state, Booklist: [...state.Booklist, action.payload] };
-
-//     case types.REMOVE_BOOK:
-//       return {
-//         ...state,
-//         Booklist: [
-//           ...state.Booklist.filter((book) => book.id !== action.payload),
-//         ],
-//       };
-
-//     default:
-//       return state;
-//   }
-// };
 
 export default bookSlice.reducer;
