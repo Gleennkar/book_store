@@ -25,28 +25,28 @@ function Books() {
             <h2 className="book-title">{library.Booklist[bookItem][0].title}</h2>
             <p className="book-author">{library.Booklist[bookItem][0].author}</p>
             <ul className="book-buttons flex-row">
-            <li className="book-button d-flex mt-2 w-90"><button className=" d-flex btn-book" type="button">Comments</button></li>
-            <li className="book-button d-flex mt-2 w-90">
-                     <button type="button" id={bookItem} className=" d-flex remove-btn" onClick={(e) => { handleRemove(e.target.id); }}>Remove</button>
-                </li>
-                <li className="book-button d-flex mt-2 w-90"><button className="d-flex btn-book" type="button">Edit</button></li>
+              <li className="book-button d-flex mt-2 w-90"><button className=" d-flex btn-book" type="button">Comments</button></li>
+              <li className="book-button d-flex mt-2 w-90">
+                <button type="button" id={bookItem} className=" d-flex remove-btn" onClick={(e) => { handleRemove(e.target.id); }}>Remove</button>
+              </li>
+              <li className="book-button d-flex mt-2 w-90"><button className="d-flex btn-book" type="button">Edit</button></li>
             </ul>
           </div>
-          
+
         ))}
-         
-      <div className="cirPro flex-row">
-        <div className="oval">X</div>
-        <div className="progress-container">
-          <p className="perc">64%</p>
-          <p className="completed">Completed</p>
+
+        <div className="cirPro flex-row">
+          <div className="oval">X</div>
+          <div className="progress-container">
+            <p className="perc">64%</p>
+            <p className="completed">Completed</p>
+          </div>
         </div>
-      </div>
-      <div className="progress">
-        <p className="chap-1">CURRENT CHAPTER</p>
-        <p className="chap-2">Chaper 17</p>
-        <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
-      </div>
+        <div className="progress">
+          <p className="chap-1">CURRENT CHAPTER</p>
+          <p className="chap-2">Chaper 17</p>
+          <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
+        </div>
 
       </div>
       <AddBook />
