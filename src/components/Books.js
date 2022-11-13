@@ -18,13 +18,13 @@ function Books() {
 
   return (
     <>
-      <div className="book-container">
+      <div className="container-fluid d-flex-column w-80 mt-5 book-container">
         {Object.keys(library.Booklist).map((bookItem) => (
 
-          <div className="book" key={uuidv4()}>
+          <div className="d-flex mt-3 book" key={uuidv4()}>
             <h2 className="book-title">{library.Booklist[bookItem][0].title}</h2>
             <p className="book-author">{library.Booklist[bookItem][0].author}</p>
-            <button type="button" id={bookItem} className="remove-btn" onClick={(e) => { handleRemove(e.target.id); }}>Remove</button>
+            <button type="button" id={bookItem} className="btn btn-primary remove-btn" onClick={(e) => { handleRemove(e.target.id); }}>Remove</button>
           </div>
         ))}
 

@@ -13,3 +13,47 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
+
+.book {
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.nav-items {
+  margin-left: 35px;
+}
+
+.logo {
+  font-size: 35px;
+  color: #0290ff;
+  margin-left: 10px;
+}
+
+.form-on {
+  width: 40%;
+  height: 40px;
+}
+
+.add-head {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

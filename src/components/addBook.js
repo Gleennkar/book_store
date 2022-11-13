@@ -26,12 +26,12 @@ function AddBook() {
     inputText.author = '';
   };
   return (
-    <div className="form-inputs">
-      <h1>ADD A NEW BOOK</h1>
-      <form className="inputs" onSubmit={handleSubmit}>
-        <input type="text" id="title" placeholder="Book-title" value={inputText.title} name="title" onChange={handleChange} />
-        <input type="text" id="author" placeholder="Book-author" value={inputText.author} name="author" onChange={handleChange} />
-        <button type="submit">Add</button>
+    <div className="container-fluid mt-5 form-inputs">
+      <h1 className='add-head'>ADD A NEW BOOK</h1>
+      <form className="justify-content-space-between inputs" onSubmit={handleSubmit}>
+        <input type="text" id="title" placeholder="Book-title" value={inputText.title} name="title" className='mx-2 form-on' onChange={handleChange} />
+        <input type="text" id="author" placeholder="Book-author" value={inputText.author} name="author" className='mx-2 form-on' onChange={handleChange} />
+        <button type="submit" className='btn btn-primary w-10 button'>Add</button>
       </form>
     </div>
   );
