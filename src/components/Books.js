@@ -10,7 +10,6 @@ function Books() {
     dispatch(getBooks());
   }, []);
   const library = useSelector((state) => state.book);
-  console.log(library);
 
   const handleRemove = (id) => {
     dispatch(removeBook(id));
@@ -26,10 +25,10 @@ function Books() {
             <p className="book-author">{library.Booklist[bookItem][0].author}</p>
             <ul className="book-buttons flex-row">
               <li className="book-button d-flex mt-2 w-90"><button className=" d-flex btn-book" type="button">Comments</button></li>
-              <li className="book-button d-flex mt-2 w-90">
+              <li className="book-button-fluid d-flex mt-2 w-90">
                 <button type="button" id={bookItem} className=" d-flex remove-btn" onClick={(e) => { handleRemove(e.target.id); }}>Remove</button>
               </li>
-              <li className="book-button d-flex mt-2 w-90"><button className="d-flex btn-book" type="button">Edit</button></li>
+              <li className="book-button-fluid d-flex mt-2 w-90"><button className="d-flex btn-book" type="button">Edit</button></li>
             </ul>
           </div>
 
