@@ -31,28 +31,8 @@ function Books() {
               <li className="book-button-fluid d-flex mt-2 w-90"><button className="d-flex btn-book1" type="button">Edit</button></li>
             </ul>
           </div>
-
-<<<<<<< HEAD
-          
-        <div className="cirPro d-flex">
-        <div className="oval">X</div>
-        <div className="progress-container">
-          <p className="perc">64%</p>
-          <p className="completed">Completed</p>
-        </div>
-      </div>
-      <div className="progress flex-column">
-        <p className="chap-1">CURRENT CHAPTER</p>
-        <p className="chap-2">Chapter 17</p>
-        <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
-      </div>
-
-      </div>
-
-        ))}
-
-=======
-          <div className="cirPro d-flex">
+                
+      <div className="cirPro d-flex">
           <div className="oval">X</div>
           <div className="progress-container">
             <p className="perc">64%</p>
@@ -65,10 +45,9 @@ function Books() {
           <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
           </div>
           </div>
->>>>>>> 714f9dbfac37ef13c466ff7d9c2289ddc3c4ba64
-
 
         ))}
+
       </div>
       <AddBook />
     </>
