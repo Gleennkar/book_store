@@ -19,7 +19,7 @@ function Books() {
     <>
       <div className=" book-container">
         {Object.keys(library.Booklist).map((bookItem) => (
-
+        <div className="d-flex">
           <div className="flex-col mt-3 book" key={uuidv4()}>
             <h2 className="book-title">{library.Booklist[bookItem][0].title}</h2>
             <p className="book-author">{library.Booklist[bookItem][0].author}</p>
@@ -32,20 +32,24 @@ function Books() {
             </ul>
           </div>
 
+          
+        <div className="cirPro d-flex">
+        <div className="oval">X</div>
+        <div className="progress-container">
+          <p className="perc">64%</p>
+          <p className="completed">Completed</p>
+        </div>
+      </div>
+      <div className="progress flex-column">
+        <p className="chap-1">CURRENT CHAPTER</p>
+        <p className="chap-2">Chapter 17</p>
+        <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
+      </div>
+
+      </div>
+
         ))}
 
-        <div className="cirPro d-flex">
-          <div className="oval">X</div>
-          <div className="progress-container">
-            <p className="perc">64%</p>
-            <p className="completed">Completed</p>
-          </div>
-        </div>
-        <div className="progress flex-column">
-          <p className="chap-1">CURRENT CHAPTER</p>
-          <p className="chap-2">Chapter 17</p>
-          <button className="btn-chapter" type="button">UPDATE PROGRESS</button>
-        </div>
 
       </div>
       <AddBook />
