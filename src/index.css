@@ -17,7 +17,6 @@ body {
 .book {
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .nav-item {
@@ -33,19 +32,24 @@ body {
 }
 
 .logo {
-  font-size: 35px;
+  font-size: 34px;
   color: #0290ff;
   margin-left: 10px;
+  width: 33%;
 }
 
 .form-on {
-  width: 40%;
+  width: 39%;
   height: 40px;
 }
 
+.inputs {
+  margin-left: 2%;
+}
+
 .add-head {
-  font-size: 35px;
-  margin-left: 10px;
+  font-size: 30px;
+  margin-left: 41px;
 }
 
 .button {
@@ -59,21 +63,22 @@ a {
 }
 
 .book-button {
- margin-left:-38px;
-  
+  margin-left: -38px;
 }
 
 .d-flex .btn-book {
   border: none;
-    background-color: white;
-    color: #0d6efd;
-    border-right: 1px solid #0d6efd;
+  background-color: white;
+  color: #0d6efd;
+  border-right: 1px solid #0d6efd;
+  justify-content: space-around;
+  padding-right: 26px;
 }
 
 .d-flex .btn-book1 {
   border: none;
-    background-color: white;
-    color: #0d6efd;
+  background-color: white;
+  color: #0d6efd;
 }
 
 .d-flex .remove-btn {
@@ -81,9 +86,9 @@ a {
   background-color: white;
   color: #0d6efd;
   border-right: 1px solid #0d6efd;
+  justify-content: space-around;
+  padding-right: 26px;
 }
-
-
 
 .btn-chapter {
   border-radius: 3px;
@@ -92,9 +97,9 @@ a {
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
-  padding: 1.438rem -2.812rem 0.5rem 1.375rem;
-  width: 10.5rem;
+  width: 17.5rem;
   border: none;
+  padding-right: 95%;
 }
 
 .cirPro {
@@ -104,6 +109,10 @@ a {
   justify-content: center;
   gap: 0.5em;
   margin-left: 148px;
+}
+
+.d-flex {
+  width: 95%;
 }
 
 .chap-1 {
@@ -157,8 +166,8 @@ a {
 
 .progress {
   padding-left: 3em;
-    height: 8rem;
-    background-color: white;
+  height: 8rem;
+  background-color: white;
 }
 
 .perc {
@@ -189,4 +198,6 @@ a {
   border: 1px solid #e8e8e8;
   border-radius: 4px;
   flex-direction: column;
+  margin-right: 50px;
+  margin-left: 50px;
 }
