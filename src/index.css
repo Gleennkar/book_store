@@ -17,7 +17,7 @@ body {
 .book {
   justify-content: space-around;
   align-items: center;
-  border: 1px solid lightgray;
+  
 }
 
 .nav-item {
@@ -59,8 +59,31 @@ a {
 }
 
 .book-button {
-  border-right: 1px solid #e8e8e8;
+ margin-left:-38px;
+  
 }
+
+.d-flex .btn-book {
+  border: none;
+    background-color: white;
+    color: #0d6efd;
+    border-right: 1px solid #0d6efd;
+}
+
+.d-flex .btn-book1 {
+  border: none;
+    background-color: white;
+    color: #0d6efd;
+}
+
+.d-flex .remove-btn {
+  border: none;
+  background-color: white;
+  color: #0d6efd;
+  border-right: 1px solid #0d6efd;
+}
+
+
 
 .btn-chapter {
   border-radius: 3px;
@@ -69,11 +92,9 @@ a {
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-  width: 11.5rem;
-
-  /* height: 2.063rem; */
-  margin-top: 1.5em;
+  padding: 1.438rem -2.812rem 0.5rem 1.375rem;
+  width: 10.5rem;
+  border: none;
 }
 
 .cirPro {
@@ -82,6 +103,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  margin-left: 148px;
 }
 
 .chap-1 {
@@ -135,7 +157,8 @@ a {
 
 .progress {
   padding-left: 3em;
-  height: 3rem;
+    height: 8rem;
+    background-color: white;
 }
 
 .perc {
