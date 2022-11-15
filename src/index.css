@@ -28,7 +28,7 @@ body {
 }
 
 .nav-items {
-  margin-left: 35px;
+  margin-left: -45px;
 }
 
 .logo {
@@ -63,7 +63,7 @@ a {
 }
 
 .book-button {
-  margin-left: -38px;
+  margin-left: -28px;
 }
 
 .d-flex .btn-book {
@@ -97,9 +97,9 @@ a {
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
-  width: 17.5rem;
+  width: 16.5rem;
   border: none;
-  padding-right: 95%;
+  padding-right: 67%;
 }
 
 .cirPro {
@@ -108,11 +108,10 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  margin-left: 148px;
 }
 
 .d-flex {
-  width: 95%;
+  width: 87%;
 }
 
 .chap-1 {
