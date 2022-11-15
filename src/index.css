@@ -13,3 +13,190 @@ body {
     'Helvetica Neue',
     sans-serif;
 }
+
+.book {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.nav-items {
+  margin-left: -45px;
+}
+
+.logo {
+  font-size: 34px;
+  color: #0290ff;
+  margin-left: 10px;
+  width: 33%;
+}
+
+.form-on {
+  width: 39%;
+  height: 40px;
+}
+
+.inputs {
+  margin-left: 2%;
+}
+
+.add-head {
+  font-size: 30px;
+  margin-left: 41px;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.book-button {
+  margin-left: -28px;
+}
+
+.d-flex .btn-book {
+  border: none;
+  background-color: white;
+  color: #0d6efd;
+  border-right: 1px solid #0d6efd;
+  justify-content: space-around;
+  padding-right: 26px;
+}
+
+.d-flex .btn-book1 {
+  border: none;
+  background-color: white;
+  color: #0d6efd;
+}
+
+.d-flex .remove-btn {
+  border: none;
+  background-color: white;
+  color: #0d6efd;
+  border-right: 1px solid #0d6efd;
+  justify-content: space-around;
+  padding-right: 26px;
+}
+
+.btn-chapter {
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  width: 16.5rem;
+  border: none;
+  padding-right: 67%;
+}
+
+.cirPro {
+  border-right: solid 1px #e8e8e8;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.d-flex {
+  width: 87%;
+}
+
+.chap-1 {
+  color: #121212;
+  opacity: 0.5;
+  font-size: 0.813rem;
+}
+
+.chap-2 {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+  margin-top: 0.5em;
+}
+
+.form-container {
+  border-top: solid 1px #e8e8e8;
+  padding: 1.5em 0 10em 0;
+  margin-top: 1.5em;
+}
+
+.form-container p {
+  color: #888;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+}
+
+.input-text {
+  border: solid 1px #e8e8e8;
+  padding: 0 0 0.2rem 1.063rem;
+  border-radius: 4px;
+  height: 2.813rem;
+  margin: 1.188rem 2.125rem 0 0;
+}
+
+.title-input {
+  width: 50%;
+}
+
+.author-input {
+  width: 20%;
+}
+
+.input-submit {
+  width: 15%;
+  height: 2.813rem;
+  font-weight: bold;
+}
+
+.progress {
+  padding-left: 3em;
+  height: 8rem;
+  background-color: white;
+}
+
+.perc {
+  color: #121212;
+  font-size: 2rem;
+}
+
+.completed {
+  color: #121212;
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.oval {
+  border-image-source: linear-gradient(to bottom, var(--medium-blue), #379cf6);
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 5px solid #379cf6;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.book-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 50px;
+}
